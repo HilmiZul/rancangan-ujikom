@@ -3,7 +3,7 @@ Silahkan berkreasi merancang UI/UX untuk aplikasi Ujikom dengan contoh ini. Cara
 
 # Instalasi
 * Download [rancangan-ujikom.zip](https://github.com/HilmiZul/rancangan-ujikom/archive/master.zip)
-* Extract folder ```htdocs``` atau kemanapun
+* Extract ke folder ```htdocs``` atau kemanapun
 * Buka ```index.html``` dengan web browser (Google Chrome/Firefox)
 
 # Custom
