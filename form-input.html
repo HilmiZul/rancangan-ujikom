@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Aplikasi Pengarsipan Surat Masuk dan Keluar</title>
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="vendor/fa/css/fa.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">U</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#"><i class="fa fa-home"></i></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pendataan <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="form-data.html"><i class="fa fa-users"></i> Form Data</a></li>
+                <li><a href="form-input.html"><i class="fa fa-book"></i> Form Input</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><i class="fa fa-file"></i> Menu lain lagi</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pengaturan <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><i class="fa fa-users"></i> Pengguna</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="login.html"><i class="fa fa-sign-out"></i> Keluar</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> <!-- TUTUP: NAVIGASI -->
+
+    <section class="form-data">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-primary">
+              <div class="panel-heading text-center">
+                Form Input
+              </div>
+              <div class="panel-body">
+                <form class="" method="post">
+                  <div class="form-group">
+                    <label for="">Input Text</label>
+                    <input type="text" class="form-control" name="input" value="">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Input 2</label>
+                    <select class="form-control" name="input2">
+                      <option value=""># Pilih #</option>
+                      <option value="">Opsi 1</option>
+                      <option value="">Opsi 2</option>
+                      <option value="">Opsi 3</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="">Input Radio</label><br>
+                    <input type="radio" name="opsi" title="opsi1" value="opsi1"> <label for="opsi1">Opsi 1</label> &nbsp;
+                    <input type="radio" name="opsi" title="opsi2" value="opsi1"> <label for="opsi2">Opsi 2</label>
+                  </div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary" name="button">Submit</button>
+                  </div>
+                </form>
+              </div>
+              </div> <!-- panel-body -->
+            </div> <!-- panel -->
+          </div> <!-- col-md-12 -->
+        </div> <!-- row -->
+      </div> <!-- container -->
+    </section>
+
+  <script src="vendor/jquery-1.10.2.js" type="text/javascript"></script>
+  <script src="vendor/jquery.dataTables.js" type="text/javascript"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="vendor/bootstrap/js/dataTables.bootstrap.js" type="text/javascript"></script>
+  <script>
+  $(document).ready(function(){
+    $("#dataTables").dataTable();
+  });
+  </script>
+  </body>
+</html>
